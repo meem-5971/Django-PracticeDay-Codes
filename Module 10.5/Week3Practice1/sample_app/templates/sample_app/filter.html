@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h3><a href="/sample_app/">Back to index page</a></h3>
+
+	 {% comment %} add value {% endcomment %}
+	 <h2>Add filter: ID -> {{id|add:"100"}}</h2>
+
+	 {% comment %} addslashes {% endcomment %}
+	 <h2>Addlashes: {{department| addslashes}}</h2>
+
+	 {% comment %} capfirst {% endcomment %}
+	 <h2>Capfirst: {{name|capfirst}}</h2>
+
+	 {% comment %} center {% endcomment %}
+	 <h2>Center: {{gender|center:"15"}}</h2>
+
+	 {% comment %} cut {% endcomment %}
+   <h2>Cut: {{name|cut:"m"}}</h2>
+
+	 {% comment %} date {% endcomment %}
+   <h2>Date: {{DOB|date:"Y-m-d"}}</h2>
+
+	 {% comment %} default {% endcomment %}
+   <h2>Default: {{DOB|default:"nothing"}}</h2>
+   <h2>Default: {{empty|default:"nothing"}}</h2>
+
+	 {% comment %} dictsort {% endcomment %}
+	 <h2>Dicsort: {{val|dictsort:"name"}}</h2>
+
+	 {% comment %} divisibleby {% endcomment %}
+	<h2>Divisibleby: {{id|divisibleby:"10"}}</h2>
+
+	{% comment %} first {% endcomment %}
+	<h2>First: {{drama|first}}</h2>
+
+	{% comment %} join  {% endcomment %}
+	<h2>Join: {{li|join:"+"}}</h2>
+
+	{% comment %} last {% endcomment %}
+	<h2>last: {{drama|last}}</h2>
+
+	{% comment %} length {% endcomment %}
+	<h2>Length: {{name|length}}</h2>
+
+	{% comment %} lower {% endcomment %}
+	<h2>Lower: {{name|lower}}</h2>
+
+	{% comment %} upper {% endcomment %}
+	<h2>Upper: {{name|upper}}</h2>
+
+	{% comment %} random {% endcomment %}
+	<h2>Random: {{drama|random}}</h2>
+
+	{% comment %} makelist {% endcomment %}
+	<h2>Makelist: {{department|make_list}}</h2>
+
+	{% comment %} slice  {% endcomment %}
+	<h2>Slice: {{drama|slice:"1:3"}}</h2>
+
+	{% comment %} time  {% endcomment %}
+	<h2>Time: {{date | time:"H:i:s"}}</h2>
+
+	{% comment %} timesince  {% endcomment %}
+	<h2>TimeSince: {{DOB | timesince}}</h2>
+
+	{% comment %} title  {% endcomment %}
+	 <h2>Title: {{name|title}}</h2>
+
+	 {% comment %} truncatechars  {% endcomment %}
+	 <h2>Truncatechar: {{name|truncatechars:5}}</h2>
+
+	 {% comment %} wordcount  {% endcomment %}
+	 <h2>wordcount: {{name|wordcount}}</h2>
+
+
+
+
+</body>
+</html>

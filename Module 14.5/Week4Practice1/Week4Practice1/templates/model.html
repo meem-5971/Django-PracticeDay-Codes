@@ -1,0 +1,32 @@
+{%extends 'home.html'%}
+{%block content%}
+<h2>Model page</h2>
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">Roll</th>
+			<th scope="col">Name</th>
+			<th scope="col">Email</th>
+			<th scope="col">Registration</th>
+			<th scope="col">Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for datas in datas %}
+		<tr>
+			<th scope="row">{{data.roll}} </th>
+			<td>{{data.name}} </td>
+			<td>{{data.email}} </td>
+			<td>{{data.registrant_id}} </td>
+			{% comment %} <td> <a class='btn btn-danger text-white' href="{% url 'Delete_studentt' data.roll %}">Delete</a> </td> {% endcomment %}
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+
+
+
+
+{% endblock %}
+
